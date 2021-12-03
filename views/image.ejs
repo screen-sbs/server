@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+
+        <title><%= info.title %></title>
+
+        <meta name="title" content="<%= info.title %>" />
+        <meta name="description" content=" " />
+
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="<%= info.pageUrl %>" />
+        <meta property="og:site_name" content="<%= config.pageTitle %>" />
+        <meta property="og:title" content="<%= info.title %>" />
+        <meta property="og:description" content=" " />
+        <meta property="og:image" content="<%= info.payloadUrl %>"> <!-- TODO Generate thumbnails (change image type) -->
+        <meta property="og:image:secure_url" content="<%= info.payloadUrl %>">
+        <!-- <meta property="og:image:width" content="${probe.width}" />
+        <meta property="og:image:height" content="${probe.height}" /> -->
+        <meta property="og:image:type" content="image/png" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="<%= info.pageUrl %>" />
+        <meta property="twitter:title" content="<%= info.title %>" />
+        <meta property="twitter:description" content=" " />
+        <meta property="twitter:image" content="<%= info.payloadUrl %>" />
+
+        <link rel="image_src" href="<%= info.payloadUrl %>" />
+        <link as="image" crossorigin="anonymous" href="<%= info.payloadUrl %>" rel="preload" />
+
+        <link rel="icon" type="image/png" href="<%= config.publicUrl %>/favicon.png" />
+        <link rel="icon" type="image/x-icon" href="<%= config.publicUrl %>/favicon.ico" />
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <a href="<%= info.payloadUrl %>">
+            <img src="<%= info.payloadUrl %>" />
+        </a>
+    </body>
+</html>

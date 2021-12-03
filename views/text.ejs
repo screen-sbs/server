@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+
+        <title><%= info.title %></title>
+
+        <meta name="title" content="<%= info.title %>" />
+        <meta name="description" content=" " />
+
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="<%= info.pageUrl %>" />
+        <meta property="og:site_name" content="<%= config.pageTitle %>" />
+        <meta property="og:title" content="<%= info.title %>" />
+        <meta property="og:description" content="<%= text.substring(0, 180) %>" />
+
+        <meta property="twitter:card" content="summary" />
+        <meta property="twitter:url" content="<%= info.pageUrl %>" />
+        <meta property="twitter:title" content="<%= info.title %>" />
+        <meta property="twitter:description" content="<%= text.substring(0, 180) %>" />
+
+        <link rel="icon" type="image/png" href="<%= config.publicUrl %>/favicon.png" />
+        <link rel="icon" type="image/x-icon" href="<%= config.publicUrl %>/favicon.ico" />
+
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/base16/railscasts.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/victormono@latest/dist/index.min.css">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <pre>
+            <a class="raw-button" href="<%= info.payloadUrl %>">view raw</a>
+            <code>
+                <%= text %>
+            </code>
+            <textarea onfocus="this.select();" readonly>
+                <%= text %>
+            </textarea>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+            <script>hljs.highlightAll();</script>
+        </pre>
+    </body>
+</html>

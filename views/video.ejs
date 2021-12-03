@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+
+        <title><%= info.title %></title>
+
+        <meta name="title" content="<%= info.title %>" />
+        <meta name="description" content=" " />
+
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="<%= info.pageUrl %>" />
+        <meta property="og:site_name" content="<%= config.pageTitle %>" />
+        <meta property="og:title" content="<%= info.title %>" />
+        <meta property="og:description" content=" " />
+
+        <link rel="icon" type="image/png" href="<%= config.publicUrl %>/favicon.png" />
+        <link rel="icon" type="image/x-icon" href="<%= config.publicUrl %>/favicon.ico" />
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <video controls autoplay loop muted>
+            <source src="<%= info.payloadUrl %>" type="video/mp4">
+            Your browser does not support the video tag.
+        </video> 
+    </body>
+</html>
