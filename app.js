@@ -11,6 +11,7 @@ const upload = require('./lib/post.js')
 const app = express()
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
+app.use(express.static(config.uploadDir))
 app.use(fileUpload({
     limits: {
         fileSize: config.fileSizeLimit * 1000000 //1mb

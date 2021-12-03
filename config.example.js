@@ -3,6 +3,7 @@ const config = {
     publicUrl: 'http://127.0.0.1:1998',
     fileSizeLimit: 20, // MB
     pageTitle: 'screen.sbs',
+    uploadDir: './upload/',
     tokens: ['secrettoken1']
 }
 

@@ -2,7 +2,7 @@
 node_modules
 package-lock.json
 logs/*.log
-public/i/*.png
-public/v/*.mp4
-public/t/*.txt
+upload/i/*.png
+upload/v/*.mp4
+upload/t/*.txt
 config.js
