@@ -1,1 +1,39 @@
-index
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+
+        <title><%= config.pageTitle %></title>
+
+        <meta name="title" content="<%= config.pageTitle %>" />
+        <meta name="description" content=" " />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="<%= config.publicUrl %>" />
+        <meta property="og:site_name" content="<%= config.pageTitle %>" />
+        <meta property="og:title" content="<%= config.pageTitle %>" />
+        <meta property="og:description" content=" " />
+        <meta property="og:image" content="<%= config.publicUrl %>/favicon.png">
+        <meta property="og:image:secure_url" content="<%= config.publicUrl %>/favicon.png">
+        <meta property="og:image:type" content="image/png" />
+
+        <meta property="twitter:card" content="summary" />
+        <meta property="twitter:url" content="<%= config.publicUrl %>" />
+        <meta property="twitter:title" content="<%= config.pageTitle %>" />
+        <meta property="twitter:description" content=" " />
+        <meta property="twitter:image" content="<%= config.publicUrl %>/favicon.png" />
+
+        <link rel="icon" type="image/png" href="<%= config.publicUrl %>/favicon.png" />
+        <link rel="icon" type="image/x-icon" href="<%= config.publicUrl %>/favicon.ico" />
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/victormono@latest/dist/index.min.css">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="index">
+            <img class="logo" src="<%= config.publicUrl %>/favicon.png">
+            <h1>screen.sbs</h1>
+            <p>Private Image/Video/Code host</p>
+        </div>
+    </body>
+</html>
