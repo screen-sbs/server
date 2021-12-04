@@ -10,6 +10,7 @@ const upload = require('./lib/post.js')
 
 const app = express()
 app.set('view engine', 'ejs')
+app.set('trust proxy', true)
 app.use(express.static('public'))
 app.use(express.static(config.uploadDir))
 app.use(fileUpload({
