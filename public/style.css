@@ -14,8 +14,26 @@ body {
     font-family: 'Victor Mono', monospace;
     margin: auto;
     display: block;
-    width: 320px;
+    width: 350px;
     text-align: center;
+}
+a {
+    color: #00baff;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+p {
+    margin-top: 12px;
+}
+h1 {
+    margin-top: 1em;
+}
+h2 {
+    margin-top: 2em;
+}
+h3 {
+    margin-top: 1.5em;
+    margin-bottom: 0.7em;
 }
 pre {
     margin: auto;
@@ -28,8 +46,6 @@ pre {
 .raw-button {
     float: right;
     color: #666666;
-    text-decoration: none;
-    border-bottom: 1px dotted #666666;
 }
 code {
     font-family: 'Victor Mono', monospace;

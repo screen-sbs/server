@@ -5,4 +5,5 @@ logs/*.log
 upload/i/*.png
 upload/v/*.mp4
 upload/t/*.txt
+!upload/*/example.*
 config.js
