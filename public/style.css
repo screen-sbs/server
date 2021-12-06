@@ -6,6 +6,9 @@ body {
     background-color: #18181a;
     color: #e6e1dc;
 }
+.highlight {
+    color: #00ff66;
+}
 .logo {
     width: 128px;
     height: 128px;
