@@ -13,10 +13,10 @@
         <meta property="og:site_name" content="<%= config.pageTitle %>" />
         <meta property="og:title" content="<%= info.title %>" />
         <meta property="og:description" content=" " />
-        <meta property="og:image" content="<%= info.payloadUrl %>"> <!-- TODO Generate thumbnails (change image type) -->
-        <meta property="og:image:secure_url" content="<%= info.payloadUrl %>">
-        <!-- <meta property="og:image:width" content="${probe.width}" />
-        <meta property="og:image:height" content="${probe.height}" /> -->
+        <meta property="og:image" content="<%= config.publicUrl %>/thumbnail/i/<%= info.name %>.<%= info.ext %>">
+        <% if (config.publicUrl.startsWith('https')) { %>
+            <meta property="og:image:secure_url" content="<%= config.publicUrl %>/thumbnail/i/<%= info.name %>.<%= info.ext %>">
+        <% } %>
         <meta property="og:image:type" content="image/png" />
 
         <meta property="twitter:card" content="summary_large_image" />
