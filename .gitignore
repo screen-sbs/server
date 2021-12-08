@@ -7,4 +7,5 @@ upload/v/*.mp4
 upload/t/*.txt
 upload/thumbnail/i/*.png
 !upload/*/example.*
+!upload/*/*/example.*
 config.js
