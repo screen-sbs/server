@@ -26,15 +26,15 @@ app.get('/', (req, res) => {
 })
 
 app.get('/i:id', (req, res) => {
-    pages.image(req, res)
+    pages.payload(req, res)
 })
 
 app.get('/v:id', (req, res) => {
-    pages.video(req, res)
+    pages.payload(req, res)
 })
 
 app.get('/t:id', (req, res) => {
-    pages.text(req, res)
+    pages.payload(req, res)
 })
 
 app.post('/upload/:token', (req, res) => {
