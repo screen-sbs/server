@@ -18,7 +18,7 @@
 - Run
   - ```pm2 start```
 
-  #### Status codes
+#### Status codes
   - /upload/
     - 201 - File upload successful
     - 400 - Missing file to upload
