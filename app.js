@@ -9,6 +9,7 @@ const upload = require('./lib/post.js')
 
 
 const app = express()
+app.disable("x-powered-by");
 app.set('view engine', 'ejs')
 app.set('trust proxy', true)
 app.use(express.static('public'))
