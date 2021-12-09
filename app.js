@@ -14,6 +14,7 @@ app.set('view engine', 'ejs')
 app.set('trust proxy', true)
 app.use(express.static('public'))
 app.use(express.static(config.uploadDir))
+app.use(express.urlencoded())
 app.use(fileUpload({
     limits: {
         fileSize: config.fileSizeLimit * 1000000 //1mb
@@ -36,6 +37,10 @@ app.get('/v:id', (req, res) => {
 
 app.get('/t:id', (req, res) => {
     pages.payload(req, res)
+})
+
+app.get('/upload', (req, res) => {
+    res.render('upload')
 })
 
 app.post('/upload/:token', (req, res) => {
