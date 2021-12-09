@@ -31,6 +31,16 @@ input[type=submit] {
     cursor: pointer;
     height: 36px;
 }
+.banner {
+    display: block;
+    border: 2px solid #343438;
+    background-color: #262629;
+    margin-top: 2em;
+}
+.banner .title {
+    font-size: 1.1em;
+    font-weight: 600;
+}
 .highlight {
     color: #00ff66;
 }

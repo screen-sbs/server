@@ -37,7 +37,7 @@
             <h2>Upload</h2>
 
             <% if (uploadError !== 'none') { %>
-                <span class="banner"><b>Upload Error</b></br><%= uploadError %></span>
+                <span class="banner"><span class="title">Upload Error</span></br><%= uploadError %></span>
             <%}%>
 
             <form action="/upload?redirect=true" method="post" enctype="multipart/form-data">
