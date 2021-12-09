@@ -1,11 +1,14 @@
 # screen.sbs
 ## Server
-##### Self-hosted image, video and code/text sharing
+### Self-hosted image, video and code/text sharing
 [Demo](https://screen.sbs) (no public uploads)
 <br>
+<br>
+
 #### Requirements
 - NodeJS (16-ish)
 <br>
+
 #### Installation
 - Clone the repository
   - ```git clone git@github.com:screen-sbs/server.git```
@@ -21,21 +24,22 @@
   - ```pm2 start```
 
 <br>
+
 #### Upload
 
 - Use screen.sbs clients
   - [Windows](https://github.com/screen-sbs/client-windows)
   - [Linux](https://github.com/screen-sbs/client-linux)
-  - Web form on {host}/upload/
-- post file to /upload
+  - Web form on ```/upload/```
+- post file to ```/upload```
   - field name is "file"
   - supported extensions are .txt, .png and .mp4
-    - files are uploaded to <uploaddir>/<type>/randomname.ext
+    - files are uploaded to ```<uploaddir>/<type>/randomname.ext```
       - types are t for txt, i for png and v for mp4
   - body contains public url
   - token must be set on one of the following options
-    - /upload/<token>
-    - /upload?token=<token>
+    - ```/upload/<token>```
+    - ```/upload?token=<token>```
     - field with name token
 
 ##### Status codes
