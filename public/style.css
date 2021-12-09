@@ -6,6 +6,31 @@ body {
     background-color: #18181a;
     color: #e6e1dc;
 }
+form {
+    margin-top: 2em;
+}
+input {
+    margin-bottom: 1.2em;
+    margin-top: 0.7em;
+    width: 330px;
+    color: #e6e1dc;
+    border: 2px solid #343438;
+    border-radius: 2px;
+    background-color: #262629;
+    padding: 2px;
+    height: 28px;
+    font-family: 'Victor Mono', monospace;
+}
+input[type=password] {
+    width: 322px;
+}
+input[type=file] {
+    width: 322px;
+}
+input[type=submit] {
+    cursor: pointer;
+    height: 36px;
+}
 .highlight {
     color: #00ff66;
 }
@@ -19,6 +44,12 @@ body {
     display: block;
     width: 350px;
     text-align: center;
+}
+.index ul {
+    text-align: left;
+    display: inline-block;
+    margin: auto;
+    margin-top: 1.5em;
 }
 a {
     color: #00baff;

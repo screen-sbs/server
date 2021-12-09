@@ -4,7 +4,10 @@ const config = {
     fileSizeLimit: 20, // MB
     pageTitle: 'screen.sbs',
     uploadDir: './upload/',
-    tokens: ['secrettoken1']
+    tokens: [
+        'secrettoken1' // ,
+        // 'secrettoken2'
+    ]
 }
 
 module.exports = config

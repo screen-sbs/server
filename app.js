@@ -40,7 +40,7 @@ app.get('/t:id', (req, res) => {
 })
 
 app.get('/upload', (req, res) => {
-    res.render('upload')
+    pages.upload(req, res)
 })
 
 app.post('/upload/:token', (req, res) => {
