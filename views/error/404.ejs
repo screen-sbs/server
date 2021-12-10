@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="robots" content="noindex" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
 
         <title><%= config.pageTitle %></title>
@@ -22,6 +23,10 @@
         <meta property="twitter:title" content="<%= config.pageTitle %> | 404" />
         <meta property="twitter:description" content="404 | Requested file could not be found" />
         <meta property="twitter:image" content="<%= config.publicUrl %>/favicon.png" />
+
+        <% if (config.facebookAppId !== '') { %>
+            <meta property="fb:app_id" content="<%= config.facebookAppId %>" />
+        <% } %>
 
         <link rel="icon" type="image/png" href="<%= config.publicUrl %>/favicon.png" />
         <link rel="icon" type="image/x-icon" href="<%= config.publicUrl %>/favicon.ico" />

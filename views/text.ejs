@@ -20,6 +20,10 @@
         <meta property="twitter:title" content="<%= info.title %>" />
         <meta property="twitter:description" content="<%= text.substring(0, 180) %>" />
 
+        <% if (config.facebookAppId !== '') { %>
+            <meta property="fb:app_id" content="<%= config.facebookAppId %>" />
+        <% } %>
+
         <link rel="icon" type="image/png" href="<%= config.publicUrl %>/favicon.png" />
         <link rel="icon" type="image/x-icon" href="<%= config.publicUrl %>/favicon.ico" />
 

@@ -7,7 +7,8 @@ const config = {
     tokens: [
         'secrettoken1' // ,
         // 'secrettoken2'
-    ]
+    ],
+    facebookAppId: '' // not required
 }
 
 module.exports = config

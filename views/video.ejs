@@ -27,6 +27,10 @@
         <meta property="twitter:description" content=" " />
         <meta property="twitter:image" content="<%= info.thumbnail %>" />
 
+        <% if (config.facebookAppId !== '') { %>
+            <meta property="fb:app_id" content="<%= config.facebookAppId %>" />
+        <% } %>
+
         <link rel="icon" type="image/png" href="<%= config.publicUrl %>/favicon.png" />
         <link rel="icon" type="image/x-icon" href="<%= config.publicUrl %>/favicon.ico" />
 

@@ -23,6 +23,10 @@
         <meta property="twitter:description" content="Self-hosted image, video & code sharing" />
         <meta property="twitter:image" content="<%= config.publicUrl %>/favicon.png" />
 
+        <% if (config.facebookAppId !== '') { %>
+            <meta property="fb:app_id" content="<%= config.facebookAppId %>" />
+        <% } %>
+
         <link rel="icon" type="image/png" href="<%= config.publicUrl %>/favicon.png" />
         <link rel="icon" type="image/x-icon" href="<%= config.publicUrl %>/favicon.ico" />
 
