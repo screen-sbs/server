@@ -13,6 +13,11 @@
         <meta property="og:site_name" content="<%= config.pageTitle %>" />
         <meta property="og:title" content="<%= info.title %>" />
         <meta property="og:description" content=" " />
+        <meta property="og:image" content="<%= info.thumbnail %>">
+        <% if (config.publicUrl.startsWith('https')) { %>
+            <meta property="og:image:secure_url" content="<%= info.thumbnail %>">
+        <% } %>
+        <meta property="og:image:type" content="image/png" />
 
         <link rel="icon" type="image/png" href="<%= config.publicUrl %>/favicon.png" />
         <link rel="icon" type="image/x-icon" href="<%= config.publicUrl %>/favicon.ico" />
