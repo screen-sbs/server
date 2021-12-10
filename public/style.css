@@ -54,6 +54,7 @@ input[type=submit] {
     display: block;
     width: 350px;
     text-align: center;
+    margin-bottom: 5em;
 }
 .index ul {
     text-align: left;
@@ -70,7 +71,7 @@ p {
     margin-top: 12px;
 }
 h1 {
-    margin-top: 1em;
+    margin-top: .4em;
 }
 h2 {
     margin-top: 2em;
