@@ -17,9 +17,8 @@ app.use(express.static(config.uploadDir))
 app.use(express.urlencoded())
 app.use(fileUpload({
     limits: {
-        fileSize: config.fileSizeLimit * 1000000 //1mb
-    },
-    abortOnLimit: true
+         fileSize: config.fileSizeLimit * 1024 * 1024
+    }
 }))
 
 
