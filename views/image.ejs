@@ -38,11 +38,15 @@
         <link rel="icon" type="image/png" href="<%= config.publicUrl %>/favicon.png" />
         <link rel="icon" type="image/x-icon" href="<%= config.publicUrl %>/favicon.ico" />
 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/victormono@latest/dist/index.min.css">
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <a href="<%= info.payloadUrl %>">
-            <img src="<%= info.payloadUrl %>" />
-        </a>
+        <div class="payload">
+            <a class="raw-button" href="<%= info.payloadUrl %>">view raw</a>
+            <a href="<%= info.payloadUrl %>">
+                <img src="<%= info.payloadUrl %>" />
+            </a>
+        </div>
     </body>
 </html>

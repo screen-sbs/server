@@ -34,12 +34,16 @@
         <link rel="icon" type="image/png" href="<%= config.publicUrl %>/favicon.png" />
         <link rel="icon" type="image/x-icon" href="<%= config.publicUrl %>/favicon.ico" />
 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/victormono@latest/dist/index.min.css">
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <video controls autoplay loop muted>
-            <source src="<%= info.payloadUrl %>" type="video/mp4">
-            Your browser does not support the video tag.
-        </video> 
+        <div class="payload">
+            <a class="raw-button" href="<%= info.payloadUrl %>">view raw</a>
+            <video controls autoplay loop muted>
+                <source src="<%= info.payloadUrl %>" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
     </body>
 </html>

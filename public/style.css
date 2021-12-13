@@ -2,13 +2,40 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     background-color: #18181a;
     color: #e6e1dc;
+    font-family: 'Victor Mono', monospace;
 }
+
+a {
+    color: #00baff;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+p {
+    margin-top: 12px;
+}
+
+h1 {
+    margin-top: .4em;
+}
+
+h2 {
+    margin-top: 2em;
+}
+
+h3 {
+    margin-top: 1.5em;
+    margin-bottom: 0.7em;
+}
+
 form {
     margin-top: 2em;
 }
+
 input {
     margin-bottom: 1.2em;
     margin-top: 0.7em;
@@ -21,66 +48,59 @@ input {
     height: 28px;
     font-family: 'Victor Mono', monospace;
 }
+
 input[type=password] {
     width: 322px;
 }
+
 input[type=file] {
     width: 322px;
 }
+
 input[type=submit] {
     cursor: pointer;
     height: 36px;
 }
+
+ul {
+    text-align: left;
+    display: inline-block;
+    margin: auto;
+    margin-top: 1.5em;
+}
+
 .banner {
     display: block;
     border: 2px solid #343438;
     background-color: #262629;
     margin-top: 2em;
 }
+
 .banner .title {
     font-size: 1.1em;
     font-weight: 600;
 }
+
 .highlight {
     color: #00ff66;
 }
+
 .logo {
     width: 128px;
     height: 128px;
+    display: block;
+    margin: auto;
 }
-.index {
-    font-family: 'Victor Mono', monospace;
+
+.content {
     margin: auto;
     display: block;
     width: 350px;
     text-align: center;
     margin-bottom: 5em;
 }
-.index ul {
-    text-align: left;
-    display: inline-block;
-    margin: auto;
-    margin-top: 1.5em;
-}
-a {
-    color: #00baff;
-    text-decoration: none;
-    border-bottom: 1px dotted;
-}
-p {
-    margin-top: 12px;
-}
-h1 {
-    margin-top: .4em;
-}
-h2 {
-    margin-top: 2em;
-}
-h3 {
-    margin-top: 1.5em;
-    margin-bottom: 0.7em;
-}
-pre {
+
+.payload pre {
     margin: auto;
     margin-top: 3vh;
     width: 90vw;
@@ -89,15 +109,18 @@ pre {
     color: rgb(200,200,200);
 }
 .raw-button {
-    float: right;
     color: #666666;
+    right: 5vw;
+    top: 1vh;
+    position: absolute;
+    font-size: 0.8em;
 }
-code {
+.payload code {
     font-family: 'Victor Mono', monospace;
     font-size: 0.8em;
-    height: 75vh
+    height: 75vh;
 }
-textarea {
+.payload textarea {
     height: 10vh;
     width: calc(100% - 8px);
     background-color: #2b2b2b;
@@ -106,27 +129,27 @@ textarea {
     padding: 4px;
     display: block;
 }
-video {
+.payload video {
     margin: auto;
     padding: 5vh 5vw 5vh 5vw;
     max-width: 90vw;
     max-height: 90vh;
     display: block;
 }
-video:fullscreen {
+.payload video:fullscreen {
     margin: auto;
     padding: 0;
     max-width: 100vw;
     max-height: 100vh;
     display: block;
 }
-video::-webkit-media-controls-volume-slider {
+.payload video::-webkit-media-controls-volume-slider {
     display:none;
 }
-video::-webkit-media-controls-mute-button {
+.payload video::-webkit-media-controls-mute-button {
     display:none;
 }
-img {
+.payload img {
     margin: auto;
     padding: 5vh 5vw 5vh 5vw;
     max-width: 90vw;
