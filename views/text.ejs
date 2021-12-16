@@ -31,19 +31,21 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/victormono@latest/dist/index.min.css">
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="<%= config.publicUrl %>/style.css" />
     </head>
     <body>
-        <pre>
+        <div class="payload">
             <a class="raw-button" href="<%= info.payloadUrl %>">view raw</a>
-            <code>
+            <pre>
+                <code>
 <%= text %>
-            </code>
-            <textarea onfocus="this.select();" readonly>
+                </code>
+                <textarea onfocus="this.select();" readonly>
 <%= text %>
-            </textarea>
-            <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
-            <script>hljs.highlightAll();</script>
-        </pre>
+                </textarea>
+                <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+                <script>hljs.highlightAll();</script>
+            </pre>
+        </div>
     </body>
 </html>

@@ -46,5 +46,6 @@
 - 201 - File upload successful
 - 400 - Missing file to upload
 - 401 - Invalid upload token
+- 413 - File size exceeds limit
 - 500 - Error while processing file
 - Body is "error" on all errors (400, 401, 500)

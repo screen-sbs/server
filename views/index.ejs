@@ -31,11 +31,13 @@
         <link rel="icon" type="image/x-icon" href="<%= config.publicUrl %>/favicon.ico" />
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/victormono@latest/dist/index.min.css">
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="<%= config.publicUrl %>/style.css" />
     </head>
     <body>
-        <div class="index">
-            <img class="logo" src="<%= config.publicUrl %>/favicon.png">
+        <div class="content">
+            <a href="<%= config.publicUrl %>">
+                <img class="logo" src="<%= config.publicUrl %>/favicon.png">
+            </a>
             <h1><%= config.pageTitle %></h1>
             <p>
                 Self-hosted 
@@ -49,7 +51,7 @@
                     <li>Self-hosted & Open Source</li>
                     <li>Windows and Linux clients</li>
                     <li><a href="/upload">Web upload</a></li>
-                    <li>OpenGraph/Twitter Card for Images & Videos</li>
+                    <li>Link preview for Images & Videos</li>
                     <li>No Database</li>
                 </ul>
             </p>
@@ -63,7 +65,7 @@
             <a href="https://dl.screen.sbs/linux/sh/latest.sh">Linux.sh</a> 
 
             <h3>Server</h3>
-            git clone git@github.com:screen-sbs/server.git
+            git clone https://github.com/screen-sbs/server.git
 
             <h3>Source</h3>
             <a href="https://github.com/screen-sbs/server">Server</a> 
