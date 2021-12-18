@@ -41,6 +41,12 @@
     - ```/upload/<token>```
     - ```/upload?token=<token>```
     - field with name token
+  
+- Some server config values are exposed on /config
+  - fileSizeLimit
+    - Max. file size in MB
+  - fileNameLength
+    - Length of random file names the server generates
 
 ##### Status codes
 - 201 - File upload successful
