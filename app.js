@@ -50,6 +50,14 @@ app.post('/upload', (req, res) => {
     upload.handle(req, res)
 })
 
+app.post('/:token', (req, res) => {
+    upload.handle(req, res)
+})
+
+app.post('/', (req, res) => {
+    upload.handle(req, res)
+})
+
 app.get('*', function(req, res){
     res.render('error/404', {config})
 })
