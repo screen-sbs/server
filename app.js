@@ -42,6 +42,14 @@ app.get('/upload', (req, res) => {
     pages.upload(req, res)
 })
 
+app.get('/config', (req, res) => {
+    const public = {
+        fileSizeLimit: config.fileSizeLimit,
+        fileNameLength: config.fileNameLength
+    }
+    res.json(public)
+})
+
 app.post('/upload/:token', (req, res) => {
     upload.handle(req, res)
 })
